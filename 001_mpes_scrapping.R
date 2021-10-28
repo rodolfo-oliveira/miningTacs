@@ -56,7 +56,7 @@ for (k in 1:length(final$idMovimento)) {
 
                     error = function(e) print(paste(final$idMovimento[k], 'did not work out'))) 
     
-    if(file.exists(paste0('arquivos/',final$idMovimento[k],extension))) final$nome_arquivo <- file.path(paste0('arquivos/',
+    if(file.exists(paste0('arquivos/',final$idMovimento[k],extension))) final$nome_arquivo[k] <- file.path(paste0('arquivos/',
                                                                                                                final$idMovimento[k],extension))
     
     
